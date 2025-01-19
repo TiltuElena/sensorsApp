@@ -40,7 +40,6 @@ body {
     border-radius: 4px;
     transition: background-color 0.3s ease-in;
     font-size: 24px;
-
 }
 
 .classroom-list li:hover {
@@ -126,4 +125,19 @@ body {
 
 #o2Data .details-title {
     color: #007BFF; /* Color for labels */
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .classroom-list {
+        width: 100%;
+    }
+
+    .data-display {
+        width: 95%;
+    }
 }
