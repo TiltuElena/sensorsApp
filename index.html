@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Measurements</title>
+    <link href="/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="classroom-list">
+        <h2 class="title">Clase LTCM</h2>
+        <ul id="classroomList">
+            <li onclick="showClassroomData('dynamicClassroom')">Clasa de Biologie</li>
+            <li onclick="showClassroomData('classroom1')">Clasa de Istorie</li>
+            <li onclick="showClassroomData('classroom2')">Clasa de Matematică</li>
+            <li onclick="showClassroomData('classroom3')">Clasa de Informatică</li>
+            <li onclick="showClassroomData('classroom4')">Clasa de Chimie</li>
+        </ul>
+    </div>
+
+    <div class="data-display" id="data-display">
+        <h2 id="classroomTitle"></h2>
+        <div id="o2Data">
+            <table>
+                <tr>
+                    <td><span class="details-title">CO2:</span></td>
+                    <td><span id="co2Value">0.0</span> <span class="unit" id="co2Unit">p/m</span></td>
+                </tr>
+                <tr>
+                    <td><span class="details-title">O2:</span></td>
+                    <td><span id="o2Value">0.0</span> <span class="unit" id="o2Unit">p/h</span></td>
+                </tr>
+                <tr>
+                    <td><span class="details-title">Temperatura:</span></td>
+                    <td><span id="o2Temp">26.0</span> <span class="unit" id="o2TempUnit">°C</span></td>
+                </tr>
+                <tr>
+                    <td><span class="details-title">Umiditatea Relativă:</span></td>
+                    <td><span id="o2Humidity">46.7</span> <span class="unit" id="o2HumidityUnit">%</span></td>
+                </tr>
+                <tr>
+                    <td><span class="details-title">Umiditatea Absolută:</span></td>
+                    <td><span id="o2AbsHumidity">11.4</span> <span class="unit" id="o2AbsHumidityUnit">g/m³</span></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="message"></div>
+    </div>
+</div>
+
+<script src="/main.js"></script>
+</body>
+</html>

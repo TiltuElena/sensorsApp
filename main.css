@@ -1,0 +1,129 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.classroom-list {
+    width: 30%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.classroom-list h2 {
+    margin-bottom: 20px;
+}
+
+.classroom-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.classroom-list li {
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in;
+    font-size: 24px;
+
+}
+
+.classroom-list li:hover {
+    background-color: #0056b3;
+}
+
+.data-display {
+    width: 65%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.data-display h2 {
+    margin: 10px 0 20px 0;
+    font-size: 36px;
+    /*font-family: SansSerif, serif;*/
+}
+
+.data-display p {
+    font-size: 24px;
+    margin: 10px 0;
+    /*font-family: SansSerif, serif;*/
+}
+
+.details-title {
+    color: gray;
+    font-weight: bolder;
+}
+
+.unit {
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+}
+
+#message {
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    transition: all ease-in 0.3s;
+}
+
+#o2Data {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#o2Data table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+#o2Data td {
+    padding: 20px 15px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    text-align: left;
+}
+
+#o2Data td:first-child {
+    width: 40%; /* Title column width */
+    color: #333;
+    font-weight: 600;
+}
+
+#o2Data td:first-child,
+#o2Data td:last-child {
+    width: 50%; /* Both columns have the same width */
+}
+
+#o2Data .unit {
+    font-weight: 500;
+    color: #555;
+}
+
+#o2Data .details-title {
+    color: #007BFF; /* Color for labels */
+}
